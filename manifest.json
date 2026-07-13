@@ -1,0 +1,20 @@
+{
+  "slug": "sales-prospecting",
+  "name": "Sales Prospecting",
+  "version": "1.0.0",
+  "description": "Worldwide corporate lead discovery (>$1bn revenue), qualification scoring, sales briefing, and one-page document export.",
+  "routes": {
+    "prefix": "/prospecting",
+    "tag": "sales-prospecting"
+  },
+  "nav": {
+    "label": "Prospecting",
+    "path": "/prospecting",
+    "icon": "Target",
+    "roles": ["GP", "Principal", "Director", "Ventures", "Sales"]
+  },
+  "nav_enabled": false,
+  "requires_env": ["BRAVE_SEARCH_KEY"],
+  "provides_tables": ["cvc.sales_prospect_runs", "cvc.sales_prospects"],
+  "requires_tables": ["cvc.sales_targets", "cvc.sales_briefings", "cvc.news_watch_companies"]
+}
